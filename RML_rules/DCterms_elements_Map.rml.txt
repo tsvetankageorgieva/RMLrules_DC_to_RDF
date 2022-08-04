@@ -1,0 +1,905 @@
+@prefix : <http://example.org/> .
+@prefix rules: <http://example.org/rules/> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+rules:metaAbstractMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.abstract']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:abstract;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaAccessRightsMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.accessRights']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:accessRights;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaAccrualMethodMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.accrualMethod']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:accrualMethod;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaAccrualPeriodicityMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.accrualPeriodicity']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:accrualPeriodicity;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaAccrualPolicyMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.accrualPolicy']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:accrualPolicy;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaAlternativeMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.alternative']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:alternative;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaAudienceMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.audience']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:audience;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaAvailableMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.available']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:accrualPolicy;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaBibliographicCitationMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.bibliographicCitation']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:bibliographicCitation;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaContributorMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.contributor']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:contributor;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaCoverageMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.coverage']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:coverage;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaCreatedMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.created']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:created;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaCreatorMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.creator']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:creator;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaDateMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.date']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:date;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaDateAcceptedMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.dateAccepted']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:dateAccepted;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaDateCopyrightedMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.dateCopyrighted']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:dateCopyrighted;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaDateSubmittedMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.dateSubmitted']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:dateSubmitted;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaDescriptionMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.description']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:description;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaEducationLevelMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.educationLevel']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:educationLevel;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaExtentMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.extent']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:extent;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaFormatMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.format']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:format;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaIdentifierMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.identifier']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:identifier;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaInstructionalMethodMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.instructionalMethod']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:instructionalMethod;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaIssuedMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.issued']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:issued;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaLanguageMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.language']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:language;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaLicenseMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.license']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:license;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaMediatorMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.mediator']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:mediator;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaMediumMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.medium']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:medium;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaModifiedMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.modified']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:modified;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaProvenanceMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.provenance']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:provenance;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaPublisherMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.publisher']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:publisher;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaRightsMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.rights']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:rights;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaRightsHolderMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.rightsHolder']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:rightsHolder;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaSourceMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.source']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:source;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"; rr:language "xml:@lang"   
+  ]
+].
+
+rules:metaSpatialMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DC.spatial']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dc:spatial;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaSubjectsMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.subject']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:subject;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaTableOfContentsMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.tableOfContents']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:tableOfContents;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaTemporalMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DC.temporal']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dc:temporal;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaTitleMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.title']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:title;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaTypeMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.type']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:type;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaValidMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.valid']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:valid;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:linkConformsToMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.conformsTo']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:conformsTo;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkHasFormatMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.hasFormat']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:hasFormat;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkHasPartMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.hasPart']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:hasPart;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkHasVersionMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.hasVersion']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:hasVersion;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkIsFormatOfMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.isFormatOf']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:isFormatOf;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkIsPartOfMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.isPartOf']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:isPartOf;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkIsReferencedByMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.isReferencedBy']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:isReferencedBy;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkIsReplacedByMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.isReplacedBy']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:isReplacedBy;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkIsRequiredByMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.isRequiredBy']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:isRequiredBy;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkIsVersionOfMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.isVersionOf']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:isVersionOf;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkReferencesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.references']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:references;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkRelationMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.relation']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:relation;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkReplacesMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.replaces']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:replaces;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkRequiresMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.requires']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:requires;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+
+rules:linkSourceMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.source']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:source;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].

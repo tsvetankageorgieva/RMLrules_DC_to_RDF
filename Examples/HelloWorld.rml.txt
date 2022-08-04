@@ -1,0 +1,135 @@
+@prefix : <http://example.org/> .
+@prefix rules: <http://example.org/rules/> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+rules:metaTitleMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.title']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:title;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaIdentifierMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.identifier']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:identifier;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaFormatMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.format']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:format;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaTypeMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.type']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:type;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
+
+rules:metaAbstractMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.abstract']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:abstract;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:linkRelationMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/link[@rel='DCTERMS.relation']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:relation;
+  rr:objectMap [
+    rml:reference "@href"; rr:language "@hreflang"  
+  ]
+].
+rules:metaCreatorMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.creator']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:creator;
+  rr:objectMap [
+    rml:reference "@content"; rr:language "xml:@lang"  
+  ]
+].
+
+rules:metaCreatedMap a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "HelloWorld.xhtml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/html/head/meta[@name='DCTERMS.created']"
+  ]; 
+ rr:subjectMap [
+    rr:template :
+  ];
+ rr:predicateObjectMap [
+  rr:predicate dcterms:created;
+  rr:objectMap [
+    rml:reference "@content"; rdf:datatype "@scheme"  
+  ]
+].
